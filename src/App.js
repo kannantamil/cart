@@ -55,7 +55,7 @@ function App() {
             <Route path='' element={<Home/>}/>
             <Route path='/likes' element={<Likes like={like} remove={remove}/>}/>
             <Route path='/cart' element={<Cart cartid={cartid}  remove={del}/>}/>
-            <Route path='/item/:id'  element={<Iphone9 likefun={likefun}/>} />
+            <Route path='/item/:id'  element={<Iphone9 idfuntion={idfuntion} likefun={likefun}/>} />
             
           </Routes>
         </BrowserRouter>
