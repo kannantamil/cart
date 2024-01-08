@@ -12,6 +12,9 @@ function App() {
   const idfuntion =(event)=>{
     
     setcartid([...cartid, event])
+    
+  }
+  const likefun =(event)=>{
     setlike([...like, event])
   }
   const [like,setlike] = useState([])
@@ -52,7 +55,7 @@ function App() {
             <Route path='' element={<Home/>}/>
             <Route path='/likes' element={<Likes like={like} remove={remove}/>}/>
             <Route path='/cart' element={<Cart cartid={cartid}  remove={del}/>}/>
-            <Route path='/item/:id'  element={<Iphone9 idfuntion={idfuntion}/>} />
+            <Route path='/item/:id'  element={<Iphone9 likefun={likefun}/>} />
             
           </Routes>
         </BrowserRouter>
