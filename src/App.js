@@ -32,10 +32,11 @@ function App() {
   }
   const remove=(event)=>{
     setlike(
-      cartid.filter((val,index)=>{
+      like.filter((val,index)=>{
+        console.log(val)
         
           if(event === index){
-  
+            
           }
           else{
             return val
