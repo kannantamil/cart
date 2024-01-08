@@ -16,7 +16,7 @@ export default function Likes ({like,remove}){
                     <img src={val.images[0]} className='h-[100px] w-[100px]' />
                     <p className='font-semibold'>{val.brand}</p>
                     <p>{val.description}</p>
-                    <button onClick={()=>remove(index)}><FcLike className='absolute  rounded-[50%] top-[1vh] right-[3%] bg-[white] p-[5px] text-[30px] z-50'/></button>
+                    <button onClick={()=>remove(index)}><FcLike className='absolute  rounded-[50%] top-[1vh] right-[3%] bg-[white] p-[5px] text-[30px]'/></button>
                 </div>
                 
                     </div>
