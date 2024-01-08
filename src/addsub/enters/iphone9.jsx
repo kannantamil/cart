@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { FcLike } from "react-icons/fc";
 
-export default function Iphone9 ({idfuntion}){
+export default function Iphone9 ({idfuntion,likefun}){
     const {id} = useParams()
     const [test,settest] = useState("")
     const pro =async()=>{
@@ -25,7 +25,7 @@ export default function Iphone9 ({idfuntion}){
                 
                 <img src={val} alt="" key={i}   />
             );})}
-            <button onClick={()=>idfuntion(test)} className=' sticky  right-0 '> <FcLike className='absolute top-1  right-3 bg-white p-[5px]  text-[30px] rounded-[50%]' /></button>
+            <button onClick={()=>likefun(test)} className=' sticky  right-0 '> <FcLike className='absolute top-1  right-3 bg-white p-[5px]  text-[30px] rounded-[50%]' /></button>
             </div>
             
             </div>
